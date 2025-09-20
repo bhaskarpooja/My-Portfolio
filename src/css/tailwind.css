@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-text {
+  background: linear-gradient(
+      95deg,
+      #059dff 15%,
+      #6549d5 45%,
+      #e33fa1 75%,
+      #fb5343 100%
+    )
+    95%/200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient {
+  background: linear-gradient(
+      95deg,
+      #059dff 15%,
+      #6549d5 45%,
+      #e33fa1 75%,
+      #fb5343 100%
+    )
+    95%/200% 100%;
+}
+@layer utilities {
+  .typed-cursor {
+    @apply text-purple-300 text-[28px] sm:text-[36px] md:text-[50px] ml-1;
+  }
+}
